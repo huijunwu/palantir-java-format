@@ -3,6 +3,8 @@ import java.util.stream.Collectors
 
 apply plugin: 'application'
 apply plugin: 'com.palantir.external-publish-jar'
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
 
 mainClassName = 'com.palantir.javaformat.java.Main'
 

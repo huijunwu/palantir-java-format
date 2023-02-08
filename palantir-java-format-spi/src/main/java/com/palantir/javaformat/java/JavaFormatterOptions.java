@@ -30,13 +30,13 @@ public final class JavaFormatterOptions {
 
     public enum Style {
         /** The default Palantir Java Style configuration. */
-        PALANTIR(2, 120),
+        PALANTIR(2, 80),
 
         /** The default Google Java Style configuration. */
-        GOOGLE(1, 100),
+        GOOGLE(1, 80),
 
         /** The AOSP-compliant configuration. */
-        AOSP(2, 100);
+        AOSP(2, 80);
 
         private final int indentationMultiplier;
         private final int maxLineLength;

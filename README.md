@@ -12,6 +12,15 @@ _A modern, lambda-friendly, 120 character Java formatter._
 
 It is based on the excellent [google-java-format](https://github.com/google/google-java-format), and benefits from the work of all the [original authors](https://github.com/google/google-java-format/graphs/contributors). palantir-java-format is available under the same [Apache 2.0 License](./LICENSE).
 
+## CLI
+
+```bash
+./gradlew clean shadowJar
+
+JAR=$(ls palantir-java-format/build/libs/*.jar | tail -1)
+java -jar ${JAR}
+```
+
 ## Upsides of automatic formatting
 
 - reduce 'nit' comments in code reviews, allowing engineers to focus on the important logic rather than bikeshedding about whitespace
